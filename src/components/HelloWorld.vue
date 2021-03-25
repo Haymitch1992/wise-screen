@@ -17,8 +17,8 @@
                 </router-link>
             </li>
             <li>
-                <router-link class="link-tag" to="/entranceGate">
-                    进站检票
+                <router-link class="link-tag" to="/exitGate">
+                    出站检票
                 </router-link>
             </li>
             <li>
