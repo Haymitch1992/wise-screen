@@ -1,6 +1,6 @@
 <template>
     <div>
-        <headerbox showTip="true"></headerbox>
+        <headerbox></headerbox>
         <broadcast></broadcast>
         <rightinfo></rightinfo>
     </div>

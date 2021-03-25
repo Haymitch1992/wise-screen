@@ -14,40 +14,40 @@
         <ul>
             <li>
                 <div>
-                    <img src="" alt="" />
-                    <div>
+                    <img src="../assets/line-6.png" alt="" />
+                    <div class="station-info">
                         <p>开往上芬方向</p>
-                        <p>To SHANGFEN</p>
+                        <p class="english">To SHANGFEN</p>
                     </div>
                 </div>
                 <div class="time-text">1分钟（Min）</div>
             </li>
             <li>
                 <div>
-                    <img src="" alt="" />
-                    <div>
+                    <img src="../assets/line-6.png" alt="" />
+                    <div class="station-info">
                         <p>开往深圳北站方向</p>
-                        <p>To Shenzhen North station</p>
+                        <p class="english">To Shenzhen North station</p>
                     </div>
                 </div>
                 <div class="time-text">2分钟（Min）</div>
             </li>
             <li>
                 <div>
-                    <img src="" alt="" />
-                    <div>
+                    <img src="../assets/line-4.png" alt="" />
+                    <div class="station-info">
                         <p>开往红山方向</p>
-                        <p>To HONGSHAN</p>
+                        <p class="english">To HONGSHAN</p>
                     </div>
                 </div>
                 <div class="time-text">4分钟（Min）</div>
             </li>
             <li>
                 <div>
-                    <img src="" alt="" />
-                    <div>
+                    <img src="../assets/line-4.png" alt="" />
+                    <div class="station-info">
                         <p>开往梅林关</p>
-                        <p>To MEILINGUAN</p>
+                        <p class="english">To MEILINGUAN</p>
                     </div>
                 </div>
                 <div class="time-text">5分钟（Min）</div>
@@ -80,15 +80,17 @@ export default {
     },
     mounted() {
         this.getCurrentTime();
+        setInterval(() => {
+            this.getCurrentTime();
+        }, 1000);
     },
     methods: {
         getCurrentTime() {
-            var dayjs = require('dayjs');
-            this.currentTime1 = dayjs()
-                .format('YYYY-MM-DD')
-                .split('-');
-            this.currentTime2 = dayjs().format('HH:mm');
-            this.currentTime3 = dayjs().day();
+            let dayjs = require('dayjs');
+            let currnet = dayjs();
+            this.currentTime1 = currnet.format('YYYY-MM-DD').split('-');
+            this.currentTime2 = currnet.format('HH:mm:ss');
+            this.currentTime3 = currnet.day();
         }
     }
 };
@@ -113,6 +115,22 @@ export default {
     }
     .time-text {
         font-size: 40px;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    li {
+        padding: 24px 0;
+    }
+    .station-info {
+        display: inline-block;
+        width: 240px;
+        color: #838383;
+        text-align: left;
+        font-size: 30px;
+        margin-left: 20px;
+        .english {
+            font-size: 18px;
+        }
     }
 }
 </style>
