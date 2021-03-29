@@ -2,22 +2,19 @@
     <div>
         <headerbox></headerbox>
         <broadcast></broadcast>
-        <rightinfo></rightinfo>
-        <entrance :stationType="stationType"></entrance>
+        <entrance :stationType="stationType" fullScreen="true"></entrance>
     </div>
 </template>
 
 <script>
 import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
-import rightinfo from '../components/rightinfo-1.vue';
 import entrance from '../components/entrance.vue';
 export default {
     name: '出站检票',
     components: {
         broadcast,
         headerbox,
-        rightinfo,
         entrance
     },
     data() {

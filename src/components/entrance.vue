@@ -1,6 +1,6 @@
 <template>
     <div class="stop-box">
-        <div class="stop-item">
+        <div class="stop-item" :class="fullScreen ? 'fullScreen' : ''">
             <img
                 src="../assets/entrance.png"
                 v-if="stationType.text1 === '进站检票'"
@@ -21,7 +21,7 @@
                 <p class="stop-text-2">{{ stationType.text2 }}</p>
             </div>
         </div>
-        <div class="station-box">
+        <div class="station-box" :class="fullScreen ? 'fullScreen' : ''">
             <img src="../assets/station.png" alt="" />
         </div>
     </div>
@@ -31,7 +31,8 @@
 export default {
     name: '禁止',
     props: {
-        stationType: Object
+        stationType: Object,
+        fullScreen: Boolean
     }
 };
 </script>
@@ -47,7 +48,15 @@ p {
     top: 260px;
     width: 100%;
     color: #fff;
-
+    .stop-item {
+        width: 1520px;
+    }
+    .station-box {
+        width: 1520px;
+    }
+    .fullScreen {
+        width: 100%;
+    }
     .stop-img {
         display: inline-block;
         margin-right: 100px;
@@ -59,7 +68,7 @@ p {
         margin-top: 40px;
     }
     .stop-text {
-        width: 900px;
+        width: 730px;
         display: inline-block;
         vertical-align: top;
     }
@@ -75,9 +84,7 @@ p {
     .stop-text-4 {
         font-size: 34px;
     }
-    .station-box {
-        text-align: left;
-    }
+
     .exit-text {
         color: #fdd40d;
     }

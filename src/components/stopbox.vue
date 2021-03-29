@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 p {
     margin: 0;
     text-align: left;
@@ -41,6 +41,7 @@ p {
     color: #fff;
     .stop-item {
         margin-bottom: 108px;
+        width: 100%;
     }
     .stop-img {
         display: inline-block;

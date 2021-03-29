@@ -1,7 +1,7 @@
 <template>
     <div>
         <headerbox></headerbox>
-        <stopbox :stopObj="stopObj"></stopbox>
+        <stopbox :stopObj="stopObj" fullScreen="true"></stopbox>
     </div>
 </template>
 

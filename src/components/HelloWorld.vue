@@ -3,27 +3,88 @@
         <ul>
             <li>
                 <router-link class="link-tag" to="/entranceGate">
-                    进站检票
+                    001
                 </router-link>
             </li>
             <li>
-                <router-link class="link-tag" to="/noEntry">
-                    禁止进站
+                <router-link class="link-tag" to="/entranceGateDemotion">
+                    001-降级
                 </router-link>
             </li>
             <li>
                 <router-link class="link-tag" to="/noExit">
-                    禁止出站
+                    002
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/screenA">
+                    003
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/screenADemotion">
+                    003-降级
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/noEntry">
+                    004
                 </router-link>
             </li>
             <li>
                 <router-link class="link-tag" to="/exitGate">
-                    出站检票
+                    005
                 </router-link>
             </li>
             <li>
-                <router-link class="link-tag" to="/entranceGate">
-                    进站检票
+                <router-link class="link-tag" to="/exitGateDemotion">
+                    005-降级
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenB">
+                    006
+                </router-link>
+            </li>
+
+            <li>
+                <router-link class="link-tag" to="/ScreenC">
+                    007
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenF">
+                    008
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenFDemotion">
+                    008-降级
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenD">
+                    009
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenE">
+                    010
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenEDemotion">
+                    010-降级
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/ScreenC">
+                    011
+                </router-link>
+            </li>
+            <li>
+                <router-link class="link-tag" to="/generalMessage">
+                    综合信息
                 </router-link>
             </li>
         </ul>
@@ -49,8 +110,10 @@ ul {
     padding: 0;
 }
 li {
-    display: inline-block;
-    margin: 0 10px;
+    display: block;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
 }
 a {
     color: #42b983;
