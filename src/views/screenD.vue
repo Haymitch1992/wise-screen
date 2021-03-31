@@ -6,7 +6,7 @@
                 <img src="../assets/arrow-top.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-right.png"
+                    src="../assets/distance-right.gif"
                     alt=""
                 />
                 <span class="distance-text">12m</span>
@@ -26,7 +26,7 @@
                 <img src="../assets/arrow-top.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-right.png"
+                    src="../assets/distance-right.gif"
                     alt=""
                 />
                 <span class="distance-text">20m</span>
@@ -46,7 +46,7 @@
                 <img src="../assets/arrow-top-1.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-left-1.png"
+                    src="../assets/distance-left-1.gif"
                     alt=""
                 />
                 <span class="distance-text">10m</span>

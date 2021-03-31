@@ -6,7 +6,7 @@
                 <img src="../assets/arrow-top.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-left.png"
+                    src="../assets/distance-left.gif"
                     alt=""
                 />
                 <span class="distance-text">12m</span>
@@ -36,7 +36,7 @@
                 <img src="../assets/arrow-right.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-right.png"
+                    src="../assets/distance-right.gif"
                     alt=""
                 />
                 <span class="distance-text">20m</span>

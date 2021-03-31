@@ -15,7 +15,7 @@
                 </div>
                 <img
                     class="distance-img"
-                    src="../assets/distance-right.png"
+                    src="../assets/distance-right.gif"
                     alt=""
                 />
                 <span class="distance-text">12m</span>
@@ -34,7 +34,7 @@
                 </div>
                 <img
                     class="distance-img"
-                    src="../assets/distance-right.png"
+                    src="../assets/distance-right.gif"
                     alt=""
                 />
                 <span class="distance-text">20m</span>
@@ -49,7 +49,7 @@
                 </div>
                 <img
                     class="distance-img"
-                    src="../assets/distance-right-1.png"
+                    src="../assets/distance-right-1.gif"
                     alt=""
                 />
                 <span class="distance-text">10m</span>

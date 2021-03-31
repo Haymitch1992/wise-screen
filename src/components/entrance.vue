@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="station-box" :class="fullScreen ? 'fullScreen' : ''">
-            <img src="../assets/station.png" alt="" />
+            <img src="../assets/station.gif" alt="" class="station-img" />
         </div>
     </div>
 </template>
@@ -43,16 +43,20 @@ p {
     text-align: left;
     vertical-align: middle;
 }
+.station-img {
+    width: 100%;
+    margin-top: 60px;
+}
 .stop-box {
     position: absolute;
     top: 260px;
     width: 100%;
     color: #fff;
     .stop-item {
-        width: 1520px;
+        width: 1526px;
     }
     .station-box {
-        width: 1520px;
+        width: 1526px;
     }
     .fullScreen {
         width: 100%;

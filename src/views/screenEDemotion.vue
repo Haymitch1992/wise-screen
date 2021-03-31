@@ -6,7 +6,7 @@
                 <img src="../assets/arrow-left.png" alt="" />
                 <img
                     class="distance-img"
-                    src="../assets/distance-left.png"
+                    src="../assets/distance-left.gif"
                     alt=""
                 />
                 <span class="distance-text">12m</span>
