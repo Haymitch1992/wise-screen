@@ -59,15 +59,15 @@
                         <p class="text">This Station</p>
                     </div>
                     <div class="current-station">
-                        <p>青年路</p>
-                        <p class="text">Qingnian Road</p>
+                        <p>红山路</p>
+                        <p class="text">Hongshan</p>
                     </div>
                     <div>
                         <div class="subway-status-left">
                             <p>开往反向</p>
                             <p>Terminus</p>
-                            <p class="big">苹果园</p>
-                            <p>Pingguoyuan</p>
+                            <p class="big">上芬</p>
+                            <p>To Shangfen</p>
                         </div>
                         <div class="subway-status-right">
                             <p>到站剩余</p>
@@ -132,8 +132,8 @@
                         <div class="subway-status-left">
                             <p>开往方向</p>
                             <p>Terminus</p>
-                            <p class="big">苹果园</p>
-                            <p>Pingguoyuan</p>
+                            <p class="big">深圳北站</p>
+                            <p>To Shenzhen North Station</p>
                         </div>
                         <div class="subway-status-right">
                             <p>到站剩余</p>
@@ -233,8 +233,8 @@
                         alt=""
                     />
                     <div class="car-text">
-                        <p>海鹰路</p>
-                        <p class="text">Haiying Road</p>
+                        <p>旺民路</p>
+                        <p class="text">Wangmin Road</p>
                     </div>
                     <div class="car-information">
                         926路;特快112路;
@@ -251,8 +251,8 @@
                         alt=""
                     />
                     <div class="car-text">
-                        <p>航丰路</p>
-                        <p class="text">Hangfeng Road</p>
+                        <p>腾龙路</p>
+                        <p class="text">Tenglong Road</p>
                     </div>
                     <div class="car-information">
                         926路;特快112路;

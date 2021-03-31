@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 p {
     margin: 0;
     text-align: left;
@@ -74,6 +74,8 @@ p {
     }
     .stop-text-1 {
         font-size: 180px;
+        height: 180px;
+        line-height: 180px;
     }
     .stop-text-2 {
         font-size: 89px;

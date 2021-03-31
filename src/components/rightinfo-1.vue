@@ -16,15 +16,15 @@
                 <div>
                     <img src="../assets/station-A.png" alt="" />
                     <div class="station-info">
-                        <p>海鹰路</p>
-                        <p class="english">Haiying Road</p>
+                        <p>旺民路</p>
+                        <p class="english">Wangmin Road</p>
                     </div>
                 </div>
                 <div class="car-middle">
                     <span class="car-text">926路</span>
                     <div class="car-info">
-                        <p>距海鹰站最近1辆</p>
-                        <p class="english">One nearest to Haiying station</p>
+                        <p>距旺民路站最近1辆</p>
+                        <p class="english">One nearest to Wangmin station</p>
                     </div>
                 </div>
                 <div>
@@ -43,15 +43,15 @@
                 <div>
                     <img src="../assets/station-B.png" alt="" />
                     <div class="station-info">
-                        <p>航丰路</p>
-                        <p class="english">Hangfeng Road</p>
+                        <p>腾龙路</p>
+                        <p class="english">Tenglong Road</p>
                     </div>
                 </div>
                 <div class="car-middle">
                     <span class="car-text">926路</span>
                     <div class="car-info">
-                        <p>距海鹰站最近1辆</p>
-                        <p class="english">One nearest to Haiying station</p>
+                        <p>距腾龙路站最近1辆</p>
+                        <p class="english">One nearest to Tenglong station</p>
                     </div>
                 </div>
                 <div>

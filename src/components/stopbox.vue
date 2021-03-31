@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="stop-item">
-            <img src="../assets/arrow.png" alt="" class="arrow-img" />
+            <img src="../assets/arrow.gif" alt="" class="arrow-img" />
             <div class="stop-text">
                 <p class="stop-text-3">{{ stopObj.text3 }}</p>
                 <p class="stop-text-4">

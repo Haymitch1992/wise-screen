@@ -1,13 +1,23 @@
 <template>
     <div class="broadcast-box">
         <div class="broadcast">
-            <div class="broadcast-item">
-                <span class="broadcast-text">欢迎乘坐深圳地铁</span>
-                <span>Welcome to Shenzhen Metro</span>
-            </div>
-            <div class="broadcast-item">
-                <span>晴天 温度 3°~6° 湿度 47%</span>
-                <span>Welcome to Shenzhen Metro</span>
+            <div class="broadcast-container" :style="{ left: leftNum + 'px' }">
+                <div class="broadcast-item">
+                    <span class="broadcast-text">欢迎乘坐深圳地铁</span>
+                    <span>Welcome to Shenzhen Metro</span>
+                </div>
+                <div class="broadcast-item">
+                    <span class="broadcast-text">
+                        晴天 温度 3℃~6℃ 湿度 47%
+                    </span>
+                    <span>
+                        Welcome to Shenzhen Metro
+                    </span>
+                </div>
+                <div class="broadcast-item">
+                    <span class="broadcast-text">欢迎乘坐深圳地铁</span>
+                    <span>Welcome to Shenzhen Metro</span>
+                </div>
             </div>
         </div>
     </div>
@@ -15,7 +25,26 @@
 
 <script>
 export default {
-    name: '文字广播'
+    name: '文字广播',
+    data() {
+        return {
+            leftNum: -500
+        };
+    },
+    mounted() {
+        this.scrollScreen();
+    },
+    methods: {
+        scrollScreen() {
+            setInterval(() => {
+                if (this.leftNum <= -3840) {
+                    this.leftNum = 0;
+                } else {
+                    this.leftNum = this.leftNum - 2;
+                }
+            }, 40);
+        }
+    }
 };
 </script>
 
@@ -35,11 +64,16 @@ export default {
     font-size: 40px;
     border-top: 4px solid #007015;
 }
+.broadcast-container {
+    position: absolute;
+    width: 7060px;
+    text-align: left;
+}
 .broadcast-item {
     display: inline-block;
-    width: 100%;
+    width: 1920px;
 }
 .broadcast-text {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 </style>

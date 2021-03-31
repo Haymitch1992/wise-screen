@@ -37,8 +37,8 @@
                     alt=""
                 />
                 <div class="screent-text-block">
-                    <p>换乘6号线</p>
-                    <p class="text">Transfer To Line 6</p>
+                    <p>开往深圳北站方向</p>
+                    <p class="text">To Shenzhen North Station</p>
                 </div>
                 <img src="../assets/stairs.png" alt="" />
             </div>
@@ -106,7 +106,7 @@ export default {
         margin-right: 60px;
         text-align: left;
         vertical-align: middle;
-        width: 500px;
+        width: 550px;
         .text {
             font-size: 38px;
         }

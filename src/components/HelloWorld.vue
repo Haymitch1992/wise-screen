@@ -108,12 +108,19 @@ h3 {
 ul {
     list-style-type: none;
     padding: 0;
+    width: 1300px;
+    margin: 0 auto;
 }
 li {
-    display: block;
+    display: inline-block;
     margin: 10px;
     font-size: 40px;
     text-align: center;
+    width: 300px;
+    border: 1px solid #ddd;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: top;
 }
 a {
     color: #42b983;

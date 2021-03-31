@@ -13,13 +13,13 @@
                     <p>换乘4号线</p>
                     <p class="text">Transfer To Line 4</p>
                 </div>
-                <img src="../assets/arrow-right.png" alt="" />
                 <img
                     class="distance-img"
                     src="../assets/distance-right.png"
                     alt=""
                 />
                 <span class="distance-text">12m</span>
+                <img src="../assets/arrow-right.png" alt="" />
             </div>
             <div class="screen-item">
                 <img src="../assets/subway-icon.png" alt="" />
@@ -29,16 +29,16 @@
                     alt=""
                 />
                 <div class="screent-text-block">
-                    <p>换乘6号线</p>
-                    <p class="text">Transfer To Line 6</p>
+                    <p>开往深圳北站方向</p>
+                    <p class="text">To Shenzhen North Station</p>
                 </div>
-                <img src="../assets/arrow-right.png" alt="" />
                 <img
                     class="distance-img"
                     src="../assets/distance-right.png"
                     alt=""
                 />
                 <span class="distance-text">20m</span>
+                <img src="../assets/arrow-right.png" alt="" />
             </div>
             <div class="screen-item  exit-block">
                 <img src="../assets/exit-A.png" alt="" />
@@ -47,13 +47,13 @@
                     <p>出口</p>
                     <p class="text">Exit</p>
                 </div>
-                <img src="../assets/arrow-right-1.png" alt="" />
                 <img
                     class="distance-img"
                     src="../assets/distance-right-1.png"
                     alt=""
                 />
                 <span class="distance-text">10m</span>
+                <img src="../assets/arrow-right-1.png" alt="" />
             </div>
         </div>
         <broadcast></broadcast>
@@ -80,7 +80,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .screen-C {
     position: absolute;
     top: 190px;
@@ -103,7 +103,7 @@ export default {
         margin-right: 60px;
         text-align: left;
         vertical-align: middle;
-        width: 500px;
+        width: 550px;
         .text {
             font-size: 38px;
         }
@@ -113,7 +113,7 @@ export default {
     }
     .distance-text {
         font-size: 48px;
-        margin-right: 80px;
+        margin-right: 40px;
         margin-left: 12px;
         vertical-align: middle;
     }
