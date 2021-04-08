@@ -29,8 +29,8 @@
                     alt=""
                 />
                 <div class="screent-text-block">
-                    <p>开往深圳北站方向</p>
-                    <p class="text">To Shenzhen North Station</p>
+                    <p>开往坳背</p>
+                    <p class="text">To Aobei</p>
                 </div>
                 <img
                     class="distance-img"

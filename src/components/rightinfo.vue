@@ -16,8 +16,8 @@
                 <div>
                     <img src="../assets/line-6.png" alt="" />
                     <div class="station-info">
-                        <p>开往上芬方向</p>
-                        <p class="english">To SHANGFEN</p>
+                        <p>开往肿瘤医院</p>
+                        <p class="english">To Tumour Hospital</p>
                     </div>
                 </div>
                 <div class="time-text">1分钟（Min）</div>
@@ -26,8 +26,8 @@
                 <div>
                     <img src="../assets/line-6.png" alt="" />
                     <div class="station-info">
-                        <p>开往深圳北站方向</p>
-                        <p class="english">To Shenzhen North station</p>
+                        <p>开往坳背</p>
+                        <p class="english">To Aobei</p>
                     </div>
                 </div>
                 <div class="time-text">2分钟（Min）</div>
@@ -36,8 +36,8 @@
                 <div>
                     <img src="../assets/line-4.png" alt="" />
                     <div class="station-info">
-                        <p>开往红山方向</p>
-                        <p class="english">To HONGSHAN</p>
+                        <p>开往爱联</p>
+                        <p class="english">To Ailian</p>
                     </div>
                 </div>
                 <div class="time-text">4分钟（Min）</div>
@@ -46,8 +46,8 @@
                 <div>
                     <img src="../assets/line-4.png" alt="" />
                     <div class="station-info">
-                        <p>开往梅林关</p>
-                        <p class="english">To MEILINGUAN</p>
+                        <p>开往荷坳</p>
+                        <p class="english">To He'ao</p>
                     </div>
                 </div>
                 <div class="time-text">5分钟（Min）</div>

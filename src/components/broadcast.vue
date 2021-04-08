@@ -3,7 +3,7 @@
         <div class="broadcast">
             <div class="broadcast-container" :style="{ left: leftNum + 'px' }">
                 <div class="broadcast-item">
-                    <span class="broadcast-text">欢迎乘坐深圳地铁</span>
+                    <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
                     <span>Welcome to Shenzhen Metro</span>
                 </div>
                 <div class="broadcast-item">
@@ -15,7 +15,7 @@
                     </span>
                 </div>
                 <div class="broadcast-item">
-                    <span class="broadcast-text">欢迎乘坐深圳地铁</span>
+                    <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
                     <span>Welcome to Shenzhen Metro</span>
                 </div>
             </div>

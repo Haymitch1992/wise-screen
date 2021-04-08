@@ -19,7 +19,7 @@ export default {
             stopObj: {
                 text1: '禁止出站',
                 text2: 'No Exit',
-                text3: '此处距离进站口12米',
+                text3: '此处距离出站口12米',
                 text4: 'It is 12 meters away from the exit of the station'
             }
         };

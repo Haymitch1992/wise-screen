@@ -59,15 +59,15 @@
                         <p class="text">This Station</p>
                     </div>
                     <div class="current-station">
-                        <p>红山路</p>
-                        <p class="text">Hongshan</p>
+                        <p>大运</p>
+                        <p class="text">Universiade</p>
                     </div>
                     <div>
                         <div class="subway-status-left">
                             <p>开往反向</p>
                             <p>Terminus</p>
-                            <p class="big">上芬</p>
-                            <p>To Shangfen</p>
+                            <p class="big">肿瘤医院</p>
+                            <p>Tumour Hospital</p>
                         </div>
                         <div class="subway-status-right">
                             <p>到站剩余</p>
@@ -132,8 +132,8 @@
                         <div class="subway-status-left">
                             <p>开往方向</p>
                             <p>Terminus</p>
-                            <p class="big">深圳北站</p>
-                            <p>To Shenzhen North Station</p>
+                            <p class="big">坳背</p>
+                            <p>To Aobei</p>
                         </div>
                         <div class="subway-status-right">
                             <p>到站剩余</p>
