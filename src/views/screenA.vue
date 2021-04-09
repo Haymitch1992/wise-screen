@@ -15,7 +15,7 @@
           <img class="margin-icon" src="../assets/line-6-big.png" alt="" />
           <div class="screent-text-block">
             <p>号线</p>
-            <p class="text">Line 6</p>
+            <p class="text">Line 14</p>
           </div>
         </div>
         <div>
@@ -44,7 +44,7 @@
           <img class="margin-icon" src="../assets/line-4-big.png" alt="" />
           <div class="screent-text-block">
             <p>号线</p>
-            <p class="text">Line 4</p>
+            <p class="text">Line 3</p>
           </div>
           <img
             src="../assets/arrow-right.png"

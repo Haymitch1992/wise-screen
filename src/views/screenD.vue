@@ -10,7 +10,7 @@
         <img class="margin-icon" src="../assets/line-4-big.png" alt="" />
         <div class="screent-text-block">
           <p>换乘4号线</p>
-          <p class="text">Transfer To Line 4</p>
+          <p class="text">Transfer To Line 3</p>
         </div>
         <img src="../assets/stairs.png" alt="" />
       </div>
