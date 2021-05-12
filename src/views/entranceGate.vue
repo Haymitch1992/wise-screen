@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <headerbox></headerbox>
-        <broadcast></broadcast>
-        <rightinfo></rightinfo>
-        <entrance :stationType="stationType"></entrance>
-    </div>
+  <div>
+    <headerbox></headerbox>
+    <broadcast></broadcast>
+    <rightinfo></rightinfo>
+    <entrance :stationType="stationType"></entrance>
+  </div>
 </template>
 
 <script>
@@ -13,21 +13,21 @@ import headerbox from '../components/headerbox.vue';
 import rightinfo from '../components/rightinfo.vue';
 import entrance from '../components/entrance.vue';
 export default {
-    name: '进站检票',
-    components: {
-        broadcast,
-        headerbox,
-        rightinfo,
-        entrance
-    },
-    data() {
-        return {
-            stationType: {
-                text1: '进站检票',
-                text2: 'Entrance Gate'
-            }
-        };
-    }
+  name: 'jinzhanjianpiao', // 进站检票
+  components: {
+    broadcast,
+    headerbox,
+    rightinfo,
+    entrance
+  },
+  data() {
+    return {
+      stationType: {
+        text1: '进站检票',
+        text2: 'Entrance Gate'
+      }
+    };
+  }
 };
 </script>
 
