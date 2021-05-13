@@ -6,7 +6,7 @@
         <div class="danger-item">
           <img src="../assets/danger-page-3.png" alt="" />
           <p>拥挤</p>
-          <p class="en">Crowding</p>
+          <p class="en">Crowded</p>
         </div>
         <div class="danger-item">
           <p class="big">安全出口</p>
@@ -15,7 +15,7 @@
         <div class="danger-item">
           <img src="../assets/danger-page-4.png" alt="" />
           <p>畅通</p>
-          <p class="en">open</p>
+          <p class="en">Smooth</p>
         </div>
         <div class="danger-item right-item">
           <img src="../assets/danger-page-16.png" alt="" />

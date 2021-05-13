@@ -8,7 +8,7 @@
           <p>禁止入内</p>
           <p>请尽快出站</p>
           <p class="danger-text-en">No entry</p>
-          <p class="danger-text-en">Please exit as soon as possible</p>
+          <p class="danger-text-en">Please leave the station immediately</p>
         </div>
       </div>
     </div>

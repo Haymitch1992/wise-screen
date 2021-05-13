@@ -7,8 +7,8 @@
         <div class="danger-text">
           <p>捂住口鼻</p>
           <p>请有序出站</p>
-          <p class="danger-text-en">Cover your mouth and nose</p>
-          <p class="danger-text-en">Please exit in order</p>
+          <p class="danger-text-en">Cover your nose and mouth</p>
+          <p class="danger-text-en">Please leave the station orderly</p>
         </div>
       </div>
     </div>

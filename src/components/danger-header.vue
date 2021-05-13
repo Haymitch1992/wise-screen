@@ -2,10 +2,9 @@
   <div class="header-box">
     <img src="../assets/sreen-logo.png" class="screen-logo" alt="screen-logo" />
     <div class="right-text" v-if="showtext">
-      <p class="text-cn">当前区域为安全区域，请按引导表示有序疏散</p>
+      <p class="text-cn">当前区域为安全区域，请按引导标识有序疏散</p>
       <p class="text-en">
-        The current area is a safe area. Please evacuate orderly according to
-        the guide sign
+        The current area is safe, please evacuate orderly by guidence
       </p>
     </div>
   </div>

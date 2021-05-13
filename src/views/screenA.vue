@@ -79,6 +79,7 @@
 <script>
 import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
+import { GET_ATS_INFO } from '../service/api';
 export default {
   name: '进站检票',
   components: {
@@ -92,6 +93,22 @@ export default {
         text2: 'Entrance Gate'
       }
     };
+  },
+  mounted() {
+    this.getAtsInfo();
+  },
+  methods: {
+    getAtsInfo() {
+      this.$api
+        .get(GET_ATS_INFO, {
+          deviceId: 1,
+          direction: 1,
+          station: 1
+        })
+        .then(res => {
+          console.log(res.data);
+        });
+    }
   }
 };
 </script>
