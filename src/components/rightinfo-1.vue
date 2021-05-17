@@ -91,9 +91,12 @@
 <script>
 import { GET_WEATHER_INFO } from '../service/api';
 export default {
-  name: '到站提示',
+  name: 'tips',
   props: {
-    stopObj: Object
+    stopObj: Object,
+    busInfo: Array,
+    nearestStationA: Object,
+    nearestStationB: Object
   },
   data() {
     return {
@@ -108,130 +111,18 @@ export default {
         '星期五',
         '星期六',
         '星期日'
-      ],
-
-      busInfo: [
-        {
-          stop_name: '地铁A口公交站',
-          subway_exit: 'A',
-          bus_info: [
-            {
-              bus_name: '123路',
-              start_stop: 'xxx',
-              end_stop: 'xxx',
-              start_time: '6:00',
-              end_time: '10:00'
-            },
-            {
-              bus_name: '124路',
-              start_stop: 'xxx',
-              end_stop: 'xxx',
-              start_time: '6:00',
-              end_time: '10:00'
-            }
-          ],
-          bus_state: [
-            {
-              bus_name: '123路',
-              stop_interval: 12,
-              distance: 3,
-              arrival_time: 10,
-              crowding_degree: 0,
-              status: 'running'
-            },
-            {
-              bus_name: '124路',
-              stop_interval: 10,
-              distance: 2,
-              arrival_time: 3,
-              crowding_degree: 0,
-              status: 'running'
-            }
-          ]
-        },
-        {
-          stop_name: '地铁B口公交站',
-          subway_exit: 'B',
-          bus_info: [
-            {
-              bus_name: '125路',
-              start_stop: 'xxx',
-              end_stop: 'xxx',
-              start_time: '6:00',
-              end_time: '10:00'
-            },
-            {
-              bus_name: '126路',
-              start_stop: 'xxx',
-              end_stop: 'xxx',
-              start_time: '6:00',
-              end_time: '10:00'
-            }
-          ],
-          bus_state: [
-            {
-              bus_name: '125路',
-              stop_interval: 12,
-              distance: 3,
-              arrival_time: 10,
-              crowding_degree: 0,
-              status: 'running'
-            },
-            {
-              bus_name: '126路',
-              stop_interval: 7,
-              distance: 2,
-              arrival_time: 3,
-              crowding_degree: 0,
-              status: 'running'
-            }
-          ]
-        }
-      ],
-      nearestStationA: {}, // A站车辆信息
-      nearestStationB: {} // B站车辆信息
+      ]
     };
   },
   mounted() {
     this.getCurrentTime();
-    this.getBusInfo();
     setInterval(() => {
       this.getCurrentTime();
     }, 1000);
   },
   methods: {
     // 获取公交信息
-    getBusInfo() {
-      this.$api
-        .get(GET_WEATHER_INFO, {
-          deviceId: 1,
-          direction: 1,
-          station: 1
-        })
-        .then(res => {
-          this.busInfo = res.data.result[0].traffic_info;
-          // 计算A站出口 最近的车辆
-          this.nearestStationA = this.nearestStation(
-            res.data.result[0].traffic_info[0].bus_state
-          );
-          this.nearestStationB = this.nearestStation(
-            res.data.result[0].traffic_info[1].bus_state
-          );
-        });
-    },
-    nearestStation(arr) {
-      // 计算最近车辆
-      let outObj = {};
-      arr.forEach(element => {
-        if (
-          !outObj.arrival_time ||
-          element.arrival_time < outObj.arrival_time
-        ) {
-          outObj = element;
-        }
-      });
-      return outObj;
-    },
+
     getCurrentTime() {
       let dayjs = require('dayjs');
       let currnet = dayjs();

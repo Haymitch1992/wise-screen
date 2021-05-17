@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    name: '禁止',
+    name: 'forbid',
     props: {
         stationType: Object,
         fullScreen: Boolean

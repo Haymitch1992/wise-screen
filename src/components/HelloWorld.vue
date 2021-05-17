@@ -132,8 +132,28 @@
 </template>
 
 <script>
+import { screenSetting } from '../service/user';
 export default {
-  name: 'HelloWorld'
+  mounted() {
+    this.decidePageNum();
+  },
+  methods: {
+    decidePageNum() {
+      screenSetting().then(res => {
+        this.$router.push(
+          res.data.screenSetting[res.data.currentPage].router_url
+        );
+        localStorage.setItem(
+          'current',
+          JSON.stringify(res.data.screenSetting[res.data.currentPage])
+        );
+        localStorage.setItem(
+          'allRouter',
+          JSON.stringify(res.data.screenSetting)
+        );
+      });
+    }
+  }
 };
 </script>
 

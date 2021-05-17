@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headerbox showTip="true"></headerbox>
+    <headerbox :showTip="true"></headerbox>
     <div class="screen-A">
       <div class="screen-A-box">
         <div class="screen-top">
@@ -24,12 +24,12 @@
             <div class="screen-bottom-item">
               <p class="text-1">开往肿瘤医院</p>
               <p class="text-2">To Tumour Hospital</p>
-              <p class="text-3">1分钟（Min）</p>
+              <p class="text-3">{{ line1.up }}分钟（Min）</p>
             </div>
             <div class="screen-bottom-item">
               <p class="text-1">开往坳背</p>
               <p class="text-2">To Aobei</p>
-              <p class="text-3">2分钟（Min）</p>
+              <p class="text-3">{{ line1.down }}分钟（Min）</p>
             </div>
           </div>
         </div>
@@ -61,12 +61,12 @@
             <div class="screen-bottom-item">
               <p class="text-1">开往爱联</p>
               <p class="text-2">To Ailian</p>
-              <p class="text-3">1分钟（Min）</p>
+              <p class="text-3">{{ line2.up }}分钟（Min）</p>
             </div>
             <div class="screen-bottom-item">
               <p class="text-1">开往荷坳</p>
               <p class="text-2">To He'ao</p>
-              <p class="text-3">2分钟（Min）</p>
+              <p class="text-3">{{ line2.down }}分钟（Min）</p>
             </div>
           </div>
         </div>
@@ -79,9 +79,9 @@
 <script>
 import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
-import { GET_ATS_INFO } from '../service/api';
+import { trainInfo } from '../service/user';
 export default {
-  name: '进站检票',
+  name: 'jinzhan',
   components: {
     broadcast,
     headerbox
@@ -91,7 +91,17 @@ export default {
       stationType: {
         text1: '进站检票',
         text2: 'Entrance Gate'
+      },
+      line1: {
+        up: '',
+        down: ''
+      },
+      line2: {
+        up: '',
+        down: ''
       }
+      // 十四号线
+      // 三号线
     };
   },
   mounted() {
@@ -99,14 +109,23 @@ export default {
   },
   methods: {
     getAtsInfo() {
-      this.$api
-        .get(GET_ATS_INFO, {
-          deviceId: 1,
-          direction: 1,
-          station: 1
-        })
+      // 上行
+      trainInfo(1, 1, 0)
         .then(res => {
-          console.log(res.data);
+          this.line1.up = res.data.result[0].tarin_state.arrival_time;
+          this.line2.up = res.data.result[1].tarin_state.arrival_time;
+        })
+        .catch(() => {
+          this.$goBack();
+        });
+      // 下行
+      trainInfo(1, 1, 1)
+        .then(res => {
+          this.line1.down = res.data.result[0].tarin_state.arrival_time;
+          this.line2.down = res.data.result[1].tarin_state.arrival_time;
+        })
+        .catch(() => {
+          this.$goBack();
         });
     }
   }

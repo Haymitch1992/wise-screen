@@ -6,7 +6,7 @@
           <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
           <span>Welcome to Shenzhen Metro</span>
         </div>
-        <div class="broadcast-item">
+        <div class="broadcast-item" v-if="weatherInfo">
           <span class="broadcast-text">
             {{ weatherInfo.weather }} 温度 {{ weatherInfo.temperture }} 湿度
             {{ weatherInfo.humidity }}
@@ -14,6 +14,10 @@
           <span>
             Welcome to Shenzhen Metro
           </span>
+        </div>
+        <div class="broadcast-item" v-if="!weatherInfo">
+          <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
+          <span>Welcome to Shenzhen Metro</span>
         </div>
         <div class="broadcast-item">
           <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
@@ -25,33 +29,22 @@
 </template>
 
 <script>
-import { GET_WEATHER_INFO } from './../service/api';
 export default {
-  name: '文字广播',
+  name: 'broadcast',
+  props: {
+    weatherInfo: {
+      type: Object
+    }
+  },
   data() {
     return {
-      leftNum: -500,
-      weatherInfo: {}
+      leftNum: -500
     };
   },
   mounted() {
     this.scrollScreen();
-    // 获取天气情况
-    this.getWeatherInfo();
   },
   methods: {
-    getWeatherInfo() {
-      this.$api
-        .get(GET_WEATHER_INFO, {
-          deviceId: 1,
-          direction: 1,
-          station: 1
-        })
-        .then(res => {
-          console.log(res.data);
-          this.weatherInfo = res.data.result[0].weather_info;
-        });
-    },
     scrollScreen() {
       setInterval(() => {
         if (this.leftNum <= -3840) {
@@ -59,7 +52,7 @@ export default {
         } else {
           this.leftNum = this.leftNum - 2;
         }
-      }, 40);
+      }, 10);
     }
   }
 };

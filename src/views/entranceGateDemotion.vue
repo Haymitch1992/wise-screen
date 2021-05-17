@@ -11,7 +11,7 @@ import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
 import entrance from '../components/entrance.vue';
 export default {
-  name: '进站检票',
+  name: 'jinzhan',
   components: {
     broadcast,
     headerbox,
