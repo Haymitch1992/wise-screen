@@ -108,11 +108,16 @@ export default {
         arrival_state: '未到达',
         arrival_time: 3,
         next_arrival_time: 13
-      }
+      },
+      timer:''
     };
   },
   mounted() {
-    this.getAtsInfo();
+    clearInterval(this.timer);
+
+    this.timer = setInterval(() => {
+      this.getAtsInfo();
+    }, this.intervalNum);
   },
   methods: {
     getAtsInfo() {

@@ -13,7 +13,7 @@
           <p class="big-en">EXIT</p>
         </div>
         <div class="danger-item">
-          <img src="../assets/danger-page-4.png" alt="" />
+          <img src="../assets/danger-page-6.png" alt="" />
           <p>畅通</p>
           <p class="en">Smooth</p>
         </div>

@@ -1,6 +1,7 @@
 import {GET_SETTING,GET_WEATHER_INFO,GET_TRAIN_INFO,GET_GUIDE_INFO} from '@/service/api'
 import {request, METHOD, removeAuthorization} from '@/utils/request'
 
+
 // 获取配置数据
 export async function screenSetting() {
   return request(GET_SETTING, METHOD.GET)
@@ -24,9 +25,9 @@ export async function trainInfo(deviceId,direction,station) {
   })
 }
 // 获取AGS
-export async function agsagsInfo(deviceId,direction,station) {
+export async function agsagsInfo(deviceId) {
   return request(GET_GUIDE_INFO, METHOD.GET, {
-    deviceId: deviceId, // 设备ID
+    device_id: localStorage.getItem('device_id'), // 设备ID
   })
 }
 

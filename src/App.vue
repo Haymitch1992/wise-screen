@@ -8,19 +8,33 @@
 import { agsagsInfo } from '../src/service/user';
 export default {
   data() {
-    return {};
+    return {
+      routerUrl: ''
+    };
   },
   mounted() {
-    // setInterval(() => {
-    //   this.getDangerInfo();
-    // }, 1000);
+    setInterval(() => {
+      this.getDangerInfo();
+    }, this.intervalNum);
   },
   methods: {
     // 监听紧急状态
     getDangerInfo() {
       agsagsInfo(1).then(res => {
-        cosnole.log(res);
+        // 如果返回值 那么页面进行跳转至应急页面
+        if (res.data.result.page_type) {
+          console.log('紧急接口0');
+          this.routerUrl = `danger-${res.data.result.page_type}`;
+          this.$router.push(this.routerUrl);
+        } else {
+          console.log('紧急接口1');
+          this.$goPage();
+        }
       });
+      // .catch(() => {
+      //   console.log('紧急接口2');
+      //   this.$goBack();
+      // });
       // 定时获取
     }
   }

@@ -49,6 +49,7 @@
 <script>
 import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
+import { trainInfo } from '../service/user';
 export default {
   name: '进站检票',
   components: {
@@ -60,8 +61,23 @@ export default {
       stationType: {
         text1: '进站检票',
         text2: 'Entrance Gate'
-      }
+      },
+      timer:''
     };
+  },
+  mounted() {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.getAtsInfo();
+    }, this.intervalNum);
+  },
+  methods: {
+    getAtsInfo() {
+      // 上行
+      trainInfo(1, 1, 0).then(res => {
+        this.$goPage();
+      });
+    }
   }
 };
 </script>

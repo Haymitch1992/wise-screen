@@ -144,6 +144,10 @@ export default {
           res.data.screenSetting[res.data.currentPage].router_url
         );
         localStorage.setItem(
+          'device_id',
+          res.data.screenSetting[res.data.currentPage].device_id
+        );
+        localStorage.setItem(
           'current',
           JSON.stringify(res.data.screenSetting[res.data.currentPage])
         );

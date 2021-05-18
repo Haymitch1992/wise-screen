@@ -27,7 +27,8 @@ export default {
         text1: '进站检票',
         text2: 'Entrance Gate'
       },
-      weatherInfo: {}
+      weatherInfo: {},
+      timer: ''
     };
   },
   methods: {
@@ -37,11 +38,16 @@ export default {
         .then(res => {
           this.weatherInfo = res.data.result[0].weather_info;
         })
-        .catch(this.$goBack());
+        .catch(() => {
+          this.$goBack();
+        });
     }
   },
   mounted() {
-    this.getWeatherInfo();
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.getWeatherInfo();
+    }, this.intervalNum);
   }
 };
 </script>

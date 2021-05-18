@@ -26,6 +26,7 @@ export default {
   },
   data() {
     return {
+      timer: '',
       stationType: {
         text1: '出站检票',
         text2: 'Exit Gate'
@@ -144,7 +145,10 @@ export default {
     }
   },
   mounted() {
-    this.getInfo();
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.getInfo();
+    }, this.intervalNum);
   }
 };
 </script>

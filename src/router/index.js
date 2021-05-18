@@ -123,11 +123,41 @@ const routes = [
   {
     path: '/danger-7',
     name: 'danger-7',
-    component: () => import('../views/danger-7.vue'),
+    component: () => import('../views/danger-2.vue'),
   },
   {
     path: '/danger-8',
     name: 'danger-8',
+    component: () => import('../views/danger-7.vue'),
+  },
+  {
+    path: '/danger-9',
+    name: 'danger-9',
+    component: () => import('../views/danger-6.vue'),
+  },
+  {
+    path: '/danger-10',
+    name: 'danger-10',
+    component: () => import('../views/danger-8.vue'),
+  },
+  {
+    path: '/danger-11',
+    name: 'danger-11',
+    component: () => import('../views/danger-8.vue'),
+  },
+  {
+    path: '/danger-12',
+    name: 'danger-12',
+    component: () => import('../views/danger-6.vue'),
+  },
+  {
+    path: '/danger-13',
+    name: 'danger-13',
+    component: () => import('../views/danger-8.vue'),
+  },
+  {
+    path: '/danger-14',
+    name: 'danger-14',
     component: () => import('../views/danger-8.vue'),
   }
 ];

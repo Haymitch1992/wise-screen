@@ -99,13 +99,17 @@ export default {
       line2: {
         up: '',
         down: ''
-      }
+      },
+      timer:''
       // 十四号线
       // 三号线
     };
   },
   mounted() {
-    this.getAtsInfo();
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.getAtsInfo();
+    }, this.intervalNum);
   },
   methods: {
     getAtsInfo() {

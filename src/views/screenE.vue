@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headerbox showTip="true"></headerbox>
+    <headerbox :showTip="true"></headerbox>
     <div class="screen-C">
       <div class="screen-item">
         <img src="../assets/arrow-left.png" alt="" />
@@ -52,7 +52,6 @@ import broadcast from '../components/broadcast.vue';
 import headerbox from '../components/headerbox.vue';
 import { trainInfo } from '../service/user';
 export default {
-  name: '出站检票',
   components: {
     broadcast,
     headerbox
@@ -67,11 +66,15 @@ export default {
         arrival_state: '未到达',
         arrival_time: 3,
         next_arrival_time: 13
-      }
+      },
+      timer:''
     };
   },
   mounted() {
-    this.getAtsInfo();
+    clearInterval(this.timer);
+    this.timer = setInterval(() => {
+      this.getAtsInfo();
+    }, this.intervalNum);
   },
   methods: {
     getAtsInfo() {
