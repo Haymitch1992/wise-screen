@@ -11,7 +11,7 @@ Vue.use(api);
 Vue.prototype.$api = api;
 Vue.prototype.$goBack = goBack; // 跳转对应降级页面
 Vue.prototype.$goPage = goPage; // 跳转应该显示的页面
-Vue.prototype.intervalNum = 100000; // 定时器间隔
+Vue.prototype.intervalNum = 5000; // 定时器间隔
 
 new Vue({
   router,

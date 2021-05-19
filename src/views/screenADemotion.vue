@@ -62,7 +62,7 @@ export default {
         text1: '进站检票',
         text2: 'Entrance Gate'
       },
-      timer:''
+      timer: ''
     };
   },
   mounted() {
@@ -79,6 +79,12 @@ export default {
         this.$goPage();
       });
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    // 导航离开该组件的对应路由时调用
+    // 可以访问组件实例 `this`
+    clearInterval(this.timer);
+    next();
   }
 };
 </script>
