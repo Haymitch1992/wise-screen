@@ -36,6 +36,7 @@ export default {
     }
   },
   mounted() {
+    this.getWeatherInfo();
     clearInterval(this.timer);
     this.timer = setInterval(() => {
       this.getWeatherInfo();

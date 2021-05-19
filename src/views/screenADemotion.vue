@@ -66,6 +66,7 @@ export default {
     };
   },
   mounted() {
+    this.getAtsInfo();
     clearInterval(this.timer);
     this.timer = setInterval(() => {
       this.getAtsInfo();

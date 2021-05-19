@@ -145,6 +145,7 @@ export default {
     }
   },
   mounted() {
+    this.getInfo();
     clearInterval(this.timer);
     this.timer = setInterval(() => {
       this.getInfo();
