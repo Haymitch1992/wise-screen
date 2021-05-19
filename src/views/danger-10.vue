@@ -13,7 +13,6 @@
 import '../assets/danger.scss'; // 应急公共样式
 import dangerHeader from '../components/danger-header.vue';
 export default {
-  name: '禁止出站',
   components: {
     dangerHeader
   },
