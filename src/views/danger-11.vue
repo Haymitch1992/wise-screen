@@ -3,7 +3,7 @@
     <div class="danger-map">
       <danger-header :showtext="true"></danger-header>
       <div class="danger-content">
-        <img class="map" src="../assets/danger-page-12.png" alt="" />
+        <img class="map" src="../assets/danger-page-10.png" alt="" />
       </div>
     </div>
   </div>

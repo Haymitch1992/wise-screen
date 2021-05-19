@@ -12,6 +12,16 @@
           <p class="text">To Train</p>
         </div>
       </div>
+      <div class="screen-item">
+        <img class="margin-icon" src="../assets/information.png" alt="" />
+        <div class="screent-text-block">
+          <p>综合信息查询</p>
+          <p class="text">Information query</p>
+        </div>
+        <img src="../assets/arrow-right.png" alt="" />
+        <img class="distance-img" src="../assets/distance-right.gif" alt="" />
+        <span class="distance-text">12m</span>
+      </div>
     </div>
     <broadcast></broadcast>
   </div>
@@ -32,11 +42,11 @@ export default {
         text1: '出站检票',
         text2: 'Exit Gate'
       },
-      timer:''
+      timer: ''
     };
   },
   mounted() {
-      clearInterval(this.timer);
+    clearInterval(this.timer);
     this.timer = setInterval(() => {
       this.getAtsInfo();
     }, this.intervalNum);
@@ -55,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 .screen-C {
   position: absolute;
-  top: 390px;
+  top: 340px;
   width: 100%;
   padding: 0 44px;
   color: #fff;

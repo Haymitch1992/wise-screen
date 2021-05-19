@@ -1,5 +1,5 @@
 {
-  "currentPage":"screen5",
+  "currentPage":"screen12",
   "screenSetting":{
     "screen1":{
       "screen_name":"屏幕一",
@@ -45,13 +45,13 @@
     },
     "screen8":{
       "screen_name":"屏幕八",
-      "device_id":"ZHZYCLTP-1",
+      "device_id":"ZHYCLTP-1",
       "router_url":"ScreenF",
       "router_no_found":"ScreenFDemotion"
     },
     "screen9":{
       "screen_name":"屏幕九",
-      "device_id":"ZHZYCLTP-2",
+      "device_id":"ZHYCLTP-2",
       "router_url":"ScreenD",
       "router_no_found":"ScreenD"
     },

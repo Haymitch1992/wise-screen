@@ -138,12 +138,12 @@ const routes = [
   {
     path: '/danger-10',
     name: 'danger-10',
-    component: () => import('../views/danger-8.vue'),
+    component: () => import('../views/danger-10.vue'),
   },
   {
     path: '/danger-11',
     name: 'danger-11',
-    component: () => import('../views/danger-8.vue'),
+    component: () => import('../views/danger-11.vue'),
   },
   {
     path: '/danger-12',
@@ -153,12 +153,12 @@ const routes = [
   {
     path: '/danger-13',
     name: 'danger-13',
-    component: () => import('../views/danger-8.vue'),
+    component: () => import('../views/danger-13.vue'),
   },
   {
     path: '/danger-14',
     name: 'danger-14',
-    component: () => import('../views/danger-8.vue'),
+    component: () => import('../views/danger-14.vue'),
   }
 ];
 
