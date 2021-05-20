@@ -67,7 +67,7 @@ export default {
         arrival_time: 3,
         next_arrival_time: 13
       },
-      timer:''
+      timer: ''
     };
   },
   mounted() {
@@ -88,6 +88,12 @@ export default {
           this.$goBack();
         });
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    // 导航离开该组件的对应路由时调用
+    // 可以访问组件实例 `this`
+    clearInterval(this.timer);
+    next();
   }
 };
 </script>

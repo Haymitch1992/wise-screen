@@ -100,7 +100,7 @@ export default {
         up: '',
         down: ''
       },
-      timer:''
+      timer: ''
       // 十四号线
       // 三号线
     };
@@ -133,6 +133,12 @@ export default {
           this.$goBack();
         });
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    // 导航离开该组件的对应路由时调用
+    // 可以访问组件实例 `this`
+    clearInterval(this.timer);
+    next();
   }
 };
 </script>
