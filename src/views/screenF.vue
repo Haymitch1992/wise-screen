@@ -3,14 +3,19 @@
     <headerbox :showTip="true"></headerbox>
     <div class="screen-C">
       <div class="screen-item">
-        <img src="../assets/arrow-top-right.png" alt="" />
-        <img class="distance-img" src="../assets/distance-left.gif" alt="" />
-        <span class="distance-text">12m</span>
-        <img src="../assets/subway-icon.png" class="margin-icon" alt="" />
-        <div class="screent-text-block">
+        <div class="screent-text-block" style="width:140px;margin-right:0;">
           <p>乘车</p>
           <p class="text">To Train</p>
         </div>
+        <img
+          src="../assets/subway-icon.png"
+          class="margin-icon"
+          style="margin:0 120px 0 20px;"
+          alt=""
+        />
+        <img class="distance-img" src="../assets/distance-right.gif" alt="" />
+        <span class="distance-text" style="margin-right:20px">12m</span>
+        <img src="../assets/arrow-top-right.png" alt="" />
       </div>
       <div class="screen-item">
         <img src="../assets/next.png" alt="" />

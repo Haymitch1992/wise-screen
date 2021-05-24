@@ -15,15 +15,20 @@
         <img src="../assets/stairs.png" alt="" />
       </div>
       <div class="screen-item">
-        <img src="../assets/subway-icon.png" alt="" />
-        <img class="margin-icon" src="../assets/line-6-big.png" alt="" />
-        <div class="screent-text-block">
+        <div class="screent-text-block" style="margin-right:0px;">
           <p>开往坳背</p>
-          <p class="text">To Aobei</p>
+          <p class="text" style="text-align: right;">To Aobei</p>
         </div>
-        <img src="../assets/arrow-right.png" alt="" />
+        <img class="margin-icon" src="../assets/line-6-big.png" alt="" />
+
+        <img
+          src="../assets/subway-icon.png"
+          style="margin-right:40px;"
+          alt=""
+        />
         <img class="distance-img" src="../assets/distance-right.gif" alt="" />
-        <span class="distance-text">20m</span>
+        <span class="distance-text" style="margin-right:20px;">20m</span>
+        <img src="../assets/arrow-right.png" alt="" />
       </div>
     </div>
     <broadcast></broadcast>

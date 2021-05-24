@@ -159,6 +159,11 @@ const routes = [
     path: '/danger-14',
     name: 'danger-14',
     component: () => import('../views/danger-14.vue'),
+  },
+  {
+    path: '/communication',
+    name: 'communication',
+    component: () => import('../views/communication.vue'),
   }
 ];
 

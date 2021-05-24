@@ -13,14 +13,24 @@
         </div>
       </div>
       <div class="screen-item">
-        <img class="margin-icon" src="../assets/information.png" alt="" />
-        <div class="screent-text-block">
+        <div class="screent-text-block" style="margin-right:20px;width:408px">
           <p>综合信息查询</p>
-          <p class="text">Information query</p>
+          <p class="text" style="text-align:right;">Information</p>
         </div>
+        <img
+          class="margin-icon"
+          src="../assets/information.png"
+          alt=""
+          style="margin-left:0px;margin-right:50px;"
+        />
+        <span class="distance-text" style="margin-right:0px;">12m</span>
+        <img
+          class="distance-img"
+          src="../assets/distance-right.gif"
+          style="margin-right:60px;"
+          alt=""
+        />
         <img src="../assets/arrow-right.png" alt="" />
-        <img class="distance-img" src="../assets/distance-right.gif" alt="" />
-        <span class="distance-text">12m</span>
       </div>
     </div>
     <broadcast></broadcast>
