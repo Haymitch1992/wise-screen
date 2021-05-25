@@ -160,11 +160,6 @@ const routes = [
     name: 'danger-14',
     component: () => import('../views/danger-14.vue'),
   },
-  {
-    path: '/communication',
-    name: 'communication',
-    component: () => import('../views/communication.vue'),
-  }
 ];
 
 const router = new VueRouter({

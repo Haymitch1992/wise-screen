@@ -217,11 +217,13 @@
         </div>
       </div>
     </div>
-    <div class="model-bg" v-if="modelVisable" @click="modelVisable = false">
+    <div
+      class="model-bg"
+      v-if="modelVisable"
+      @click.stop.self.prevent="modelVisable = false"
+    >
       <div class="model-container">
-        <img src="../assets/voice-bj.png" alt="" />
-        <p>通话中</p>
-        <p class="small">On the phone</p>
+        <communication></communication>
       </div>
     </div>
   </div>
@@ -229,7 +231,11 @@
 
 <script>
 import { GET_WEATHER_INFO } from '../service/api';
+import communication from '../components/communication';
 export default {
+  components: {
+    communication
+  },
   data() {
     return {
       modelVisable: false,
@@ -295,7 +301,8 @@ export default {
   width: 1920px;
   height: 1080px;
   .model-container {
-    margin: 350px auto;
+    margin: 230px auto;
+    width: 1000px;
     font-size: 40px;
     color: #fff;
     .small {
