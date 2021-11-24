@@ -4,7 +4,7 @@
       <div class="broadcast-container" :style="{ left: leftNum + 'px' }">
         <div class="broadcast-item">
           <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
-          <span>Welcome to Shenzhen Metro</span>
+          <span>Welcome to Shenzhen Metro Line 14</span>
         </div>
         <div class="broadcast-item" v-if="weatherInfo">
           <span class="broadcast-text">
@@ -12,16 +12,16 @@
             {{ weatherInfo.humidity }}
           </span>
           <span>
-            Welcome to Shenzhen Metro
+            Welcome to Shenzhen Metro Line 14
           </span>
         </div>
         <div class="broadcast-item" v-if="!weatherInfo">
           <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
-          <span>Welcome to Shenzhen Metro</span>
+          <span>Welcome to Shenzhen Metro Line 14</span>
         </div>
         <div class="broadcast-item">
           <span class="broadcast-text">欢迎乘坐深圳地铁十四号线</span>
-          <span>Welcome to Shenzhen Metro</span>
+          <span>Welcome to Shenzhen Metro Line 14</span>
         </div>
       </div>
     </div>

@@ -10,13 +10,31 @@ import { agsagsInfo } from '../src/service/user';
 import socketItem from './components/socket.vue';
 export default {
   data() {
-    return {};
+    return {
+      timer: ''
+    };
   },
   components: {
     socketItem
   },
-  mounted() {},
-  methods: {}
+  mounted() {
+    this.refreshApp();
+  },
+  destroyed() {
+    clearInterval(this.timer);
+  },
+  methods: {
+    // 每隔1小时获取当前时间 凌晨2点 强制刷新页面
+    refreshApp() {
+      this.timer = setInterval(() => {
+        let refreshTime = new Date().getHours();
+        if (refreshTime === 2) {
+          console.log('强制刷新', refreshTime);
+          location.reload();
+        }
+      }, 1000 * 60 * 60);
+    }
+  }
 };
 </script>
 
